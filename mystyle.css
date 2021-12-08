@@ -1,0 +1,38 @@
+body {
+  background-color: SteelBlue;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+h1 {
+  font-family: Georgia;
+  color: LightGrey;
+  text-align: center;
+  font-size: 120px;
+  line-height: 34px;
+  padding: 10px;
+  opacity: 0.5;
+}
+h2 {
+  font-family: Georgia;
+  color: LightGrey;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  opacity: 0.5;
+}
+h3 {
+  font-family: Calibri;
+  color: LightGrey;
+  font-size: 30px;
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+p {
+  font-family: Calibri;
+  font-size: 20px;
+}
+
+div {
+  border: 10px double black;
+}
