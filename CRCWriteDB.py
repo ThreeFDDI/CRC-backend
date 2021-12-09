@@ -1,9 +1,11 @@
 import json
 import boto3
 
+AWS_REGION = 'us-east-1'
+
 def lambda_handler(event, context):
 
-    client = boto3.resource("dynamodb")
+    client = boto3.resource("dynamodb", region_name=AWS_REGION)
     
     table = client.Table("CRC_visitors")
     
