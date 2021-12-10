@@ -1,5 +1,8 @@
 import json
 import boto3
+import os
+
+DynamoDBTable = os.environ['DatabaseTable']
 
 AWS_REGION = 'us-east-1'
 
@@ -7,7 +10,7 @@ def lambda_handler(event, context):
 
     client = boto3.resource("dynamodb", region_name=AWS_REGION)
     
-    table = client.Table("CRC_visitors")
+    table = client.Table(DynamoDBTable)
     
     table.put_item(Item = {
         "visitor_number": event["requestContext"]["identity"]["sourceIp"], 
